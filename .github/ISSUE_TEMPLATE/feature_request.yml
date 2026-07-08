@@ -1,0 +1,37 @@
+name: Feature request
+description: Propose a new capability or schema improvement.
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the behavior, CLI change, or schema change.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - CLI
+        - .idiolect schema
+        - Corpus compilation
+        - Prompt compiler
+        - Local model adapter
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy and local-first impact
+      description: Does this require network access or new local data storage?

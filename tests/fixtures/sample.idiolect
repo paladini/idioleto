@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "sample",
+  "created_at": "2026-07-07T12:00:00Z",
+  "language": "en",
+  "source_summary": {
+    "file_count": 1,
+    "total_characters": 358,
+    "total_words": 64,
+    "included_extensions": [".md"]
+  },
+  "stylometrics": {
+    "average_sentence_length": 28.0,
+    "type_token_ratio": 0.72,
+    "punctuation_density": 18.2,
+    "passive_voice_ratio": 0.03,
+    "disallowed_ngrams": [
+      {
+        "ngram": "books to read",
+        "n": 3,
+        "reason": "future_intent"
+      }
+    ]
+  },
+  "semantic_anchors": [
+    {
+      "id": "anchor-sample-belief",
+      "kind": "philosophy",
+      "snippet": "I believe useful software should keep private material close to the person who created it.",
+      "source": {
+        "file": "sample.md",
+        "location": "sentence:1"
+      }
+    },
+    {
+      "id": "anchor-sample-preference",
+      "kind": "preference",
+      "snippet": "I prefer practical details over vague promises.",
+      "source": {
+        "file": "sample.md",
+        "location": "sentence:2"
+      }
+    }
+  ]
+}
